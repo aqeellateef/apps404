@@ -573,14 +573,12 @@
     </div>
 
     <script>
-        // منع تحديد النص ونسخه
         document.addEventListener('copy', function(e) {
             e.preventDefault();
         });
         document.addEventListener('selectstart', function(e) {
             e.preventDefault();
         });
-        // منع فتح قائمة الفحص أو النسخ عبر الكيبورد (F12, Ctrl+U, Ctrl+C)
         document.addEventListener('keydown', function(e) {
             if (e.key === 'F12' || (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 'c' || e.key === 'C' || e.key === 's' || e.key === 'S'))) {
                 e.preventDefault();
