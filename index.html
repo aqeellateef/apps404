@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>منصة التطبيقات الذكية | Smart Apps Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
@@ -61,6 +61,12 @@
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .telegram-ticker:focus {
+            outline: none;
+            border-color: #ef4444;
+            box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.5), 0 12px 30px rgba(38, 161, 222, 0.3);
         }
 
         .telegram-ticker::before {
@@ -240,10 +246,10 @@
             margin-bottom: 15px;
         }
 
-        /* حاوية الأزرار (جنب إلى جنب) */
+        /* حاوية الأزرار */
         .app-buttons {
             display: flex;
-            gap: 10px;
+            gap: 6px;
             border-top: 1px solid var(--border-color);
             padding-top: 15px;
         }
@@ -251,9 +257,9 @@
         .btn {
             flex: 1;
             border: none;
-            padding: 12px 10px;
+            padding: 10px 4px;
             border-radius: 12px;
-            font-size: 13px;
+            font-size: 10.5px;
             font-weight: 700;
             cursor: pointer;
             text-align: center;
@@ -261,8 +267,18 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
+            gap: 3px;
+            white-space: nowrap;
             transition: all 0.2s ease;
+        }
+
+        /* تأثير إطار التركيز الأحمر البارز للريموتموت والتلفاز */
+        .btn:focus, .telegram-ticker:focus {
+            outline: none !important;
+            border: 3px solid #ef4444 !important;
+            box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.4), 0 6px 20px rgba(239, 68, 68, 0.3) !important;
+            transform: scale(1.05);
+            z-index: 10;
         }
 
         /* زر التلفاز (ذهبي) */
@@ -289,6 +305,20 @@
             opacity: 0.95;
             transform: scale(1.02);
             box-shadow: 0 6px 16px rgba(59, 130, 246, 0.35);
+        }
+
+        /* زر المشغل المخصص */
+        .btn-player {
+            background: #ffffff;
+            color: #000000;
+            border-radius: 12px;
+            border: 2px dashed #cccccc;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-player:hover {
+            background: #f1f5f9;
+            transform: scale(1.02);
         }
 
         /* حقوق النشر */
@@ -396,8 +426,8 @@
                 </div>
             </div>
             <div class="app-buttons">
-                <a href="https://apps.apple.com/sa/app/shashety/id1448378384" class="btn btn-tv">تحميل للأيفون</a>
-                <a href="https://play.google.com/store/apps/details?id=net.halasat.tv" class="btn btn-phone">تحميل للهاتف والتلفاز</a>
+                <a href="https://apps.apple.com/sa/app/shashety/id1448378384" class="btn btn-phone">🍏 تحميل للأيفون</a>
+                <a href="https://play.google.com/store/apps/details?id=net.halasat.tv" class="btn btn-phone">📱 تحميل للهاتف والتلفاز</a>
             </div>
         </div>
 
@@ -428,7 +458,7 @@
                         <h2 class="app-title">one iraq</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc"> لمشاهدة القنوات الرياضية والعربيه </p>
+                    <p class="app-desc">لمشاهدة القنوات الرياضية والعربيه</p>
                 </div>
             </div>
             <div class="app-buttons">
@@ -446,7 +476,7 @@
                         <h2 class="app-title">افلامي - Aflaame</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc">تطبيق افلامي هوه تطبيق مزود بشبكات الشمال نور البداية اذ يحتوي على جميع الافلام والمسلسلات مترجمة ومدبلجة والانميات</p>
+                    <p class="app-desc">تطبيق افلامي هو تطبيق مزود بشبكات الشمال نور البداية اذ يحتوي على جميع الافلام والمسلسلات مترجمة ومدبلجة والانميات</p>
                 </div>
             </div>
             <div class="app-buttons">
@@ -464,7 +494,7 @@
                         <h2 class="app-title">Vodu TV</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc">تطبيق فودو هوه تطبيق مزود في اكثر الشبكات بلعراق اذ يحتوي على جميع الافلام والمسلسلات مترجمة ومدبلجة والانميات</p>
+                    <p class="app-desc">تطبيق فودو هو تطبيق مزود في اكثر الشبكات بلعراق اذ يحتوي على جميع الافلام والمسلسلات مترجمة ومدبلجة والانميات</p>
                 </div>
             </div>
             <div class="app-buttons">
@@ -473,7 +503,7 @@
             </div>
         </div>
 
-        <!-- تطبيقSmartTube -->
+        <!-- تطبيق SmartTube -->
         <div class="app-card">
             <div class="app-header">
                 <img src="https://img.utdstc.com/icon/b9f/977/b9f977832d162f1a9e65e2df6fb6a1ae352121073563b43e1837f8fbcf79601b:200" alt="SmartTube" class="app-icon">
@@ -482,7 +512,7 @@
                         <h2 class="app-title">SmartTube</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc">تطبيق يوتيوب بدون تسجيل دخول </p>
+                    <p class="app-desc">تطبيق يوتيوب بدون تسجيل دخول</p>
                 </div>
             </div>
             <div class="app-buttons">
@@ -499,7 +529,7 @@
                         <h2 class="app-title">سيمودراما</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc">لـ ـمــشـ ـاهـ ـدة الإفـ ـلام والمسـ ـلسلات بجودات وسيرفرات مختلفة عديدة وباقات متنوعة مقسمة حسب الفئة</p>
+                    <p class="app-desc">لمشاهدة الأفلام والمسلسلات بجودات وسيرفرات مختلفة عديدة وباقات متنوعة مقسمة حسب الفئة</p>
                 </div>
             </div>
             <div class="app-buttons">
@@ -517,7 +547,7 @@
                         <h2 class="app-title">دراما لايف</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc">تطبيق دراما لايف الرقم 01 لمشاهدة المباريات و القنوات و الأفلام للهاتف و التلفاز أيضا. التطبيق يتضمن أكثر من 2000 قناة و 1000 فلم و مسلسل متنوع.</p>
+                    <p class="app-desc">تطبيق دراما لايف الرقم 01 لمشاهدة المباريات والقنوات والأفلام للهاتف والتلفاز أيضاً. يتضمن أكثر من 2000 قناة و1000 فيلم ومسلسل.</p>
                 </div>
             </div>
             <div class="app-buttons">
@@ -535,7 +565,7 @@
                         <h2 class="app-title">ياسين تيفي</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc">افضل تطبيق لمشاهدة المباريات بسيرفرات مدفوعه بدون مشغل بدون اعلانات.</p>
+                    <p class="app-desc">افضل تطبيق لمشاهدة المباريات بسيرفرات مدفوعة بدون مشغل وبدون إعلانات.</p>
                 </div>
             </div>
             <div class="app-buttons">
@@ -547,16 +577,16 @@
         <!-- تطبيق الأحمد تيفي -->
         <div class="app-card">
             <div class="app-header">
-                <img src="https://files.catbox.moe/um7qyd.jpg" alt=" الأحمد تيفي" class="app-icon">
+                <img src="https://files.catbox.moe/um7qyd.jpg" alt="الأحمد تيفي" class="app-icon">
                 <div class="app-info">
                     <div class="app-title-row">
                         <h2 class="app-title">الأحمد تيفي</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc">لـ ـمــشـ ـاهـ ـدة مجموعة مميزة من القنـ وات والباقات الرياضـ ـية بجودات وسيرفرات مختلفة عديدة وباقات متنوعة مقسمة حسب الفئة .</p>
+                    <p class="app-desc">لمشاهدة مجموعة مميزة من القنوات والباقات الرياضية بجودات وسيرفرات مختلفة عديدة وباقات متنوعة مقسمة حسب الفئة.</p>
                 </div>
             </div>
-            <div class="activation-code-box" style="background: rgba(255, 255, 255, 0.05); border: 1px dashed rgba(255, 255, 255, 0.2); padding: 10px 15px; border-radius: 8px; margin: 15px 0; text-align: center; color: #fff; font-size: 14px;">
+            <div style="background: rgba(255, 255, 255, 0.05); border: 1px dashed rgba(255, 255, 255, 0.2); padding: 10px 15px; border-radius: 8px; margin: 15px 0; text-align: center; color: #fff; font-size: 14px;">
                 🔑 كود التفعيل: <span style="font-weight: bold; color: #4CAF50; letter-spacing: 1px;">1111</span>
             </div>
             <div class="app-buttons">
@@ -565,26 +595,24 @@
             </div>
         </div>
 
-
-<!-- تطبيق عالم الدراما -->
+        <!-- تطبيق عالم الدراما -->
         <div class="app-card">
             <div class="app-header">
-                <img src="https://dramaworld.aflamilive.com/dist/images/dw.png" alt=" عالم الدراما" class="app-icon">
+                <img src="https://dramaworld.aflamilive.com/dist/images/dw.png" alt="عالم الدراما" class="app-icon">
                 <div class="app-info">
                     <div class="app-title-row">
                         <h2 class="app-title">عالم الدراما</h2>
                         <span class="app-badge">تحديث مستمر</span>
                     </div>
-                    <p class="app-desc">لمشاهدة جميع الافلام والمسلسلات العربية و الاجنبية والتركية .  بسيرفرات كثيرة مهكر مع المشغل</p>
+                    <p class="app-desc">لمشاهدة جميع الافلام والمسلسلات العربية والاجنبية والتركية بسيرفرات كثيرة مع المشغل.</p>
                 </div>
             </div>
-            <div class="app-buttons" style="display: flex; gap: 8px;">
-                <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/TV_V4.2.apk" class="btn btn-tv" style="flex: 1; font-size: 13px; padding: 10px 5px; white-space: nowrap; text-align: center;">📺 تحميل للتلفاز</a>
-                <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/_V4.2.apk" class="btn btn-phone" style="flex: 1; font-size: 13px; padding: 10px 5px; white-space: nowrap; text-align: center;">📱 تحميل للهاتف</a>
-                <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/DW.Player_1.4f.apk" class="btn btn-player" style="flex: 1; background: #ffffff; color: #000000; border-radius: 12px; border: 2px dashed #cccccc; font-size: 13px; padding: 10px 5px; white-space: nowrap; text-align: center; text-decoration: none; display: inline-block;">⚙️  تحميل المشغل </a>
+            <div class="app-buttons">
+                <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/TV_V4.2.apk" class="btn btn-tv">📺 تحميل للتلفاز</a>
+                <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/_V4.2.apk" class="btn btn-phone">📱 تحميل للهاتف</a>
+                <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/DW.Player_1.4f.apk" class="btn btn-player">⚙️ تحميل المشغل</a>
             </div>
         </div>
-
 
         <!-- حقوق النشر -->
         <footer class="footer">
@@ -608,4 +636,3 @@
     </script>
 </body>
 </html>
-
