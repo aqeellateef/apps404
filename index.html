@@ -45,20 +45,20 @@
             padding: 0 10px;
         }
 
-        /* تحويل الإعلان ليصبح على شكل شريط أفقي مرتب وذو ارتفاع قياسي */
+        /* حاوية الإعلانات */
         .ad-container {
-            margin: 0 auto 20px auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            max-width: 728px;
-            min-height: 90px;
-            overflow: hidden;
-            border-radius: 12px;
-            background: rgba(18, 24, 38, 0.5);
+            margin-bottom: 25px;
+            padding: 10px;
+            background: var(--card-bg);
             border: 1px solid var(--border-color);
-            padding: 5px;
+            border-radius: 16px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
         }
 
         /* شبكة التطبيقات (عمودين للتلفاز والشاشات الكبيرة) */
@@ -81,7 +81,7 @@
             border: 1px solid rgba(38, 161, 222, 0.3);
             border-radius: 16px;
             padding: 14px 20px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -186,8 +186,8 @@
         /* هيدر الموقع الاحترافي */
         .site-header {
             text-align: center;
-            margin-bottom: 25px;
-            padding: 10px 20px 10px;
+            margin-bottom: 30px;
+            padding: 10px 20px 20px;
         }
 
         .site-header h1 {
@@ -286,6 +286,7 @@
             margin-bottom: 15px;
         }
 
+        /* حاوية الأزرار */
         .app-buttons {
             display: flex;
             gap: 6px;
@@ -394,10 +395,18 @@
             </div>
         </a>
 
-        <!-- إعلان Adsterra بشكل شريط أفقي أنيق -->
+        <!-- كود الإعلانات المضاف -->
         <div class="ad-container">
-            <script async="async" data-cfasync="false" src="//pl30920798.effectivecpmnetwork.com/c07889ed897ef30b06f561780f27dae9/invoke.js"></script>
-            <div id="container-c07889ed897ef30b06f561780f27dae9"></div>
+            <script>
+              atOptions = {
+                'key' : 'bd2c57591f3a2ec65a2738353eb96972',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highperformanceformat.com/bd2c57591f3a2ec65a2738353eb96972/invoke.js"></script>
         </div>
 
         <!-- ترويسة الموقع -->
