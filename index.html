@@ -45,24 +45,6 @@
             padding: 0 10px;
         }
 
-        /* حاوية الإعلانات */
-        .ad-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 25px;
-            padding: 15px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-
         /* شبكة التطبيقات (عمودين للتلفاز والشاشات الكبيرة) */
         .apps-grid {
             display: grid;
@@ -83,7 +65,7 @@
             border: 1px solid rgba(38, 161, 222, 0.3);
             border-radius: 16px;
             padding: 14px 20px;
-            margin-top: 10px;
+            margin-bottom: 25px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -93,13 +75,6 @@
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            grid-column: span 2;
-        }
-
-        @media (max-width: 768px) {
-            .telegram-ticker {
-                grid-column: span 1;
-            }
         }
 
         .telegram-ticker:focus {
@@ -366,31 +341,6 @@
             transform: scale(1.02);
         }
 
-        /* حاوية الإعلانات في نهاية التطبيقات */
-        .bottom-ad-wrapper {
-            grid-column: span 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            padding: 15px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            margin-top: 10px;
-            overflow: hidden;
-        }
-
-        @media (max-width: 768px) {
-            .bottom-ad-wrapper {
-                grid-column: span 1;
-            }
-        }
-
         .footer {
             text-align: center;
             padding: 20px;
@@ -412,36 +362,22 @@
 
     <div class="container">
 
-        <!-- حاوية الإعلانات العلوية -->
-        <div class="ad-container">
-            <div>
-                <script src="https://pl30921537.profitableratecpmnetwork.com/92/82/07/9282070903eeb73e12b0393ea93ae10a.js"></script>
+        <!-- شريط تليجرام الاحترافي الأنيق -->
+        <a href="https://t.me/c1_x2" target="_blank" class="telegram-ticker">
+            <div class="telegram-content">
+                <div class="telegram-icon-box">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.89.03-.25.38-.51 1.06-.78 4.16-1.81 6.94-3.01 8.34-3.6 3.97-1.66 4.79-1.95 5.33-1.96.12 0 .38.03.55.17.14.12.18.28.2.4-.02.07-.02.13-.04.2z"/></svg>
+                </div>
+                <div class="telegram-text">
+                    <h3>انضم الآن لقناة تليجرام</h3>
+                    <p>تابع أحدث التحديثات والتطبيقات أول بأول</p>
+                </div>
             </div>
-            <div>
-                <script>
-                  atOptions = {
-                    'key' : 'bd2c57591f3a2ec65a2738353eb96972',
-                    'format' : 'iframe',
-                    'height' : 250,
-                    'width' : 300,
-                    'params' : {}
-                  };
-                </script>
-                <script src="https://www.highperformanceformat.com/bd2c57591f3a2ec65a2738353eb96972/invoke.js"></script>
+            <div class="telegram-action">
+                <span>انضم الآن</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
             </div>
-            <div>
-                <script>
-                  atOptions = {
-                    'key' : '9e30190944cb252dc99faeba8cbb3b60',
-                    'format' : 'iframe',
-                    'height' : 50,
-                    'width' : 320,
-                    'params' : {}
-                  };
-                </script>
-                <script src="https://www.highrevenueformat.com/9e30190944cb252dc99faeba8cbb3b60/invoke.js"></script>
-            </div>
-        </div>
+        </a>
 
         <!-- ترويسة الموقع -->
         <header class="site-header">
@@ -488,7 +424,7 @@
                 </div>
             </div>
 
-            <!-- تطبيق جنرال Genral TV -->
+     <!-- تطبيق جنرال Genral TV -->
             <div class="app-card">
                 <div class="app-header">
                     <img src="https://domaincapital.com/ar/wp-content/uploads/2026/03/Genral-TV-512x435.jpg" alt="Genral TV" class="app-icon">
@@ -505,6 +441,7 @@
                     <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/GENRAL.TV_2.19.apk" class="btn btn-phone">📱 تحميل للهاتف</a>
                 </div>
             </div>
+
 
             <!-- تطبيق Oz tv -->
             <div class="app-card">
@@ -849,34 +786,6 @@
                 <div class="app-buttons">
                     <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/NordVPN_6.30.1.apk" class="btn btn-tv">📺 تحميل للتلفاز</a>
                     <a href="https://github.com/aqeellateef/apps404/releases/download/v1.0.0/NordVPN_6.30.1.apk" class="btn btn-phone">📱 تحميل للهاتف</a>
-                </div>
-            </div>
-
-            <!-- شريط تليجرام بعد تطبيق Nord VPN مباشرة -->
-            <a href="https://t.me/c1_x2" target="_blank" class="telegram-ticker">
-                <div class="telegram-content">
-                    <div class="telegram-icon-box">
-                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.89.03-.25.38-.51 1.06-.78 4.16-1.81 6.94-3.01 8.34-3.6 3.97-1.66 4.79-1.95 5.33-1.96.12 0 .38.03.55.17.14.12.18.28.2.4-.02.07-.02.13-.04.2z"/></svg>
-                    </div>
-                    <div class="telegram-text">
-                        <h3>انضم الآن لقناة تليجرام</h3>
-                        <p>تابع أحدث التحديثات والتطبيقات أول بأول</p>
-                    </div>
-                </div>
-                <div class="telegram-action">
-                    <span>انضم الآن</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                </div>
-            </a>
-
-            <!-- الإعلانات في نهاية القائمة -->
-            <div class="bottom-ad-wrapper">
-                <div>
-                    <script src="https://pl30921537.profitableratecpmnetwork.com/92/82/07/9282070903eeb73e12b0393ea93ae10a.js"></script>
-                </div>
-                <div>
-                    <script async="async" data-cfasync="false" src="https://pl30920798.profitableratecpmnetwork.com/c07889ed897ef30b06f561780f27dae9/invoke.js"></script>
-                    <div id="container-c07889ed897ef30b06f561780f27dae9"></div>
                 </div>
             </div>
 
